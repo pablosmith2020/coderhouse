@@ -1,0 +1,33 @@
+//Bootstrap Framework
+@import"../bootstrap/scss/bootstrap.scss";
+
+//Variables
+@import "variables/variable";
+
+//Varios
+@import "varios/varios";
+
+//Animacion
+@import "animate/animate";
+
+//Menu
+@import "menu/menu";
+
+//Body
+@import "body/body";
+
+//Footer
+@import "footer/footer";
+
+//Registracion
+@import "pages/_registration.scss";
+
+//Contactenos
+@import "pages/contact_us";
+
+//Contactenos
+@import "error_404/error404";
+
+//Media Query
+@import "media_query/media_query";
+

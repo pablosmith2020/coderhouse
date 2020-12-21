@@ -1,0 +1,24 @@
+//Footer
+.icon_responsive_footer:before {
+    font-family: 'icomoon' !important;
+  
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+ 
+    content: "\f10a";
+  }
+  footer{
+        div{
+             p {
+                font-family: 'Times New Roman', Times, serif 'Courier New', Courier, monospace;
+             }
+        }
+  }

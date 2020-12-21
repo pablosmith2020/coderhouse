@@ -1,0 +1,91 @@
+// Practica de Clase SASS II Mixim + If Anidado//
+
+@mixin icon_footer($size) {
+
+
+    @if ($size > 576px)   {  //576
+        content: $phone_ico;
+        color: red;
+    }
+
+    @else if ($size  > 576px) and  ($size < 768px)  {  //768
+        content: $tablet_ico;
+        color: blue;
+    }
+
+    @else if ($size > 768px) and ($size < 994px) {
+        content: $notebook_ico;
+        color: yellow;
+    }
+
+    @else if ($size >= $desktop_size){
+        content: $desktop_ico;
+        color:coral;
+    }
+    
+}
+/* Ejercicio Clase 12 SASS II  FOREACH*/
+
+
+$themeColours: (
+    "pink": #DC51AC,
+    "red": #D64651,
+    "orange": #E55937,
+);
+
+@each $themeColour, $i in $themeColours {
+    body_sass {
+        &.#{$themeColour} {
+            background-color: $i;
+        }	
+    }
+}
+/* Ejecricio  clase 12 SASS While*/
+$count: 0;
+
+@while $count < 5 {
+    .length_sass-#{$count} {
+        width: (10 * $count) + px;
+    }
+
+    $count: $count + 1;
+}
+/*Ejecricio  clase 12 SASS MAPS*/
+
+//Defino la variable Array c
+$primary-colors: (
+  'red': (
+    #ff0000,
+    rbg(255, 0, 0)
+  ),
+  'green': (
+    #00ff00,
+    rbg(0, 255, 0)
+  ),
+  'blue': (
+    #0000ff,
+    rbg(0, 0, 255)
+  )
+);
+
+//Recorro la Variable "Array" segmentando la  lave-valor y creando una clase para cada item del  Array
+@each $color-name, $color-code in $primary-colors {
+  .color_sass-#{$color-name} {
+    background: $color-code;
+  }
+}
+
+/*Ejecricio  clase 12 SASS MAPS*/
+.button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}
+

@@ -1,0 +1,90 @@
+//Phone Size
+@media only screen and (max-width: $phone_size) {
+    footer p{
+         color: red;
+    }
+
+    .icon_responsive_footer:before {
+        @include icon_footer($phone_size);
+
+    }
+    .lbl_error_404{
+        width: 300px;
+    }
+}
+
+// Tablet Size Contactenos
+@media only screen and (max-width: $tablet_size) {
+    .contact-form {
+        margin-top: 25px;
+    }
+
+    .btn-send {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .second-portion {
+        margin-top: 25px;
+    }
+    .icon_responsive_footer:before {
+
+        @include icon_footer($tablet_size);
+    }
+    footer p{
+        color: blue;
+   }
+}
+
+//Notebook Size
+@media only screen and (max-width: $notebook_size) {
+    .btn_center_car {
+        margin-left: -16px
+    }
+    .icon_responsive_footer:before {
+        @include icon_footer($notebook_size);
+    }
+    footer p{
+        color: yellow;
+   }
+
+}
+
+/* Destop Size Soluciono el Margen izquierdo para tarjeta por eso no uso  la variable $desktop_size*/
+@media only screen and (max-width: 1170px) {
+    .card-deck {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .overlap_sub_menu {
+        z-index: 999;
+        background-color: #343a40;
+        justify-content: end;
+
+    }
+
+    .icon_responsive_footer:before {
+        @include icon_footer($desktop_size);
+    }
+
+    #div_search {
+        display: none;
+    }
+
+    #logo_header {
+        display: none;
+    }
+
+    #btn_header {
+        display: flex;
+        color: blue;
+        justify-content: right;
+        align-items: flex-end;
+    }
+
+}

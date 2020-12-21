@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--SEO Clase 13-->
+    <meta name="encoding" charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title>Repuestos Caballito</title>
+    <meta name="description"
+        content="Sitio dedicado a la venta de repuestos automotores, originales y marcas alternativas. Nacionales e importador." />
+    <meta name="keywords"
+        content="Bomba de agua, alternadores, amortiguadores, frenos a tambos, frenos a disco, carburación, inyección." />
+    <!--Fin SEO-->
+
+    <!--Declaro Icomoon-->
+    <link rel="stylesheet" href="css/iconmoon/style.css">
+    <!--Declaro Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!--Declaro Fontaweson-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!--Declaro Mis Estilos-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Declaro Mis Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Script a Jquerry-->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <!--Fuentes a Utilizar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img id="logo_header" src="img/logo.png" class="logo_image_size">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp" href="#">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp" href="pages/error_404.html">Error_404</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="pages/contact_us.html">Contactenos</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Mi Cuenta </a>
+                            <div class="dropdown-menu dropdown-pink">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
+                                <a class="dropdown-item" href="pages/registration.html">Registrarce</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Medios de Venta </a>
+                            <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
+                                <a class="dropdown-item" href="https://www.mercadolibre.com.ar">Mercadolibre</a>
+                                <a class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="btn_header" class=" btn_center_car">
+                        <a class="btn btn-success btn-sm ml-3" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
+                        <!-- <span class="badge badge-light">3</span>-->
+                    </div>
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- Modal Login incorporo el logion.html por medio de un iframe-->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <iframe src="pages/login.html" width="600" height="475" frameborder="0" style="border:0"
+                            allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 img_carrusel" src="img/Carrousel/p1.jpg"
+                            src="holder.js/900x400?theme=social" alt="Imagen de Referencia Carrusel 1">
+                        <div class="carousel-caption">
+                            <h3>La mas Amplia Variedad </h3>
+                            <p>En Repuestos Multi Marca</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img_carrusel" src="img/Carrousel/P2.jpg"
+                            data-src="holder.js/900x400?theme=industrial" alt="Imagen de Referencia Carrusel 2">
+                        <div class="carousel-caption">
+                            <h3>Mejores Precions del Mercado</h3>
+                            <p>Proveemos a Grandes Distribuidores</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid align-items-center">
+            <h3 class="font-weight-bold">Comprá En Tres Simples Pasos</h3>
+            <div class="container-fluid">
+                <div class="card-deck scaled_card">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h4 class="card-title">Primer - Paso</h4>
+                            <p class="card-text">Completá el formulario con lo que estás buscando. Detallanos los
+                                repuestos
+                                que necesitás. Escribilos en forma de lista, uno debajo del otro. Tené a mano el número
+                                de
+                                chasis del vehículo.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Segundo - Paso</h4>
+                            <p class="card-text">Cotizamos tu pedido y acordamos el pago. Te enviamos la cotización y un
+                                link para que puedas abonar tu pedido con el medio de pago que elijas.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Tercer - Paso</h4>
+                            <p class="card-text">Enviamos los pedidos a todo el país. Una vez realizado el pago
+                                enviaremos
+                                tu pedido a donde lo hayas solicitado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h3 class="font-weight-bold">Buscador de Produtos</h3>
+        </div>
+        </div>
+        <section class="search-sec">
+            <div class="container">
+                <form action="#" method="post" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-12 p-0 ">
+                                    <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                        <option>Seleccione Repuesto</option>
+                                        <option>Bomba de Agua</option>
+                                        <option>Bomba de Combustible</option>
+                                        <option>Pastilla de Freno</option>
+                                        <option>Filtros</option>
+                                        <option>Aceites</option>
+                                        <option>Refrigerantes</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                                    <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                        <option>Seleccion de Marca</option>
+                                        <option>Ford</option>
+                                        <option>Peugeot</option>
+                                        <option>Citroen</option>
+                                        <option>Chevrolet</option>
+                                        <option>Toyota</option>
+                                        <option>Volswagen</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                                    <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                        <option>Seleccion de Modelo</option>
+                                        <option>Ranger</option>
+                                        <option>S-10</option>
+                                        <option>Hilux</option>
+                                        <option>Amarok</option>
+                                        <option>SW4</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <input type="text" class="form-control search-slt"
+                                        placeholder="Numero de Cedula verde">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <button type="button" class="btn btn-primary wrn-btn">Consultar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="container-fluid">
+            <div class="row" id="Seccion Medios De Pago">
+            </div>
+        </div>
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <div class="row  justify-content-center">
+            <footer class="page-footer font-small mdb-color pt-4 ">
+                <!-- Footer Links -->
+                <div class="container text-center text-md-center ">
+                    <!-- Footer links -->
+                    <div class="row text-center text-md-center mt-3 pb-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold brand_font">REPUESTOS CABALLITO</h6>
+                            <p>Somos una empresa familiar con más de 30 años de trayectoria en el barrio de Caballito.
+                                Trabajamos todas las marcas nacionales e importados, tanto repuesto originales como
+                                réplicas de excelente calidad.</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none">
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold brand_font">PRODUCTOS</h6>
+                            <p>Bombas de Agua</p>
+                            <p>Frenos</p>
+                            <p>Amortiguacion</p>
+                            <p>Distribucion</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold brand_font">Links</h6>
+                            <p>
+                                <a href="#!">Mi Cuenta</a>
+                            </p>
+                            <p>
+                                <a href="#!">Registracion</a>
+                            </p>
+                            <p>
+                                <a href="#!">Como Comprar</a>
+                            </p>
+                            <p>
+                                <a href="#!">Sucursales</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none">
+                        <!-- Grid column -->
+                        <!--Resolver los iconos raros que se  ven delante de cada opcion-->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                            <p>
+                                <i class="fas fa-home mr-3"></i> Av Rivadavia 4210, CABA, ARG
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> info@gmail.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> + 011 2345-6788
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i> + 011 2345-6789
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Footer links -->
+                    <hr>
+                    <!-- Grid row -->
+                    <div class="row d-flex">
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-6 justify-content-start">
+                            <!--Copyright-->
+                            <h6 class="text-center ">© 2020 Copyright:
+                                <strong> Pablo Smith</strong>
+                            </h6>
+                        </div>
+                        <div class="col-md-6 col-lg-6 ">
+                            <span class="icon_responsive_footer"> Dispositivo</span>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-5 col-lg-4 ml-lg-0">
+                            <!-- Social buttons -->
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <!-- Footer Links -->
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+    <!--Script a Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Script a Popper-->
+    <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>

@@ -7,369 +7,375 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1">
 
-    <!--Declaro Icomoon-->
-    <link rel="stylesheet" href="../css/iconmoon/style.css">
-
-    <!--Declaro Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-
-    <!--Declaro Mis Estilos-->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-
-    <!--Declaro Mis Animaciones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!--Script a Jquerry-->
-    <script src="../js/jquery-3.4.1.slim.min.js"></script>
-
-    <!--Fuentes a Utilizar -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
-        rel="stylesheet">
-
-    <!--Declaro pruebas-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />-->
-    <link rel="stylesheet" type="text/css" href="../css/all.min.css">
-
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../css prueba/bootstrap.min.css">
+    <link rel="stylesheet" href="../css prueba/magnific-popup.css">
+    <link rel="stylesheet" href="../css prueba/jquery-ui.css">
+    <link rel="stylesheet" href="../css prueba/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css prueba/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css prueba/aos.css">
+    <link rel="stylesheet" href="../css prueba/style.css">
 
 </head>
 
 <body>
-
-
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <div class="navbar-brand">
-                <img id="logo_header" src="../img/logo.png" class="logo_image_size">
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
-                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link nav-link animate__animated animate__backInUp" href="#">Home <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link nav-link animate__animated animate__backInUp" href="#">Sucursales</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link nav-link animate__animated animate__backInUp" href="#">Contactenos</a>
-                    </li>
-                    <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
-                            id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Mi Cuenta </a>
-                        <div class="dropdown-menu dropdown-pink">
-                            <a class="dropdown-item" href="login.html">Ingresar</a>
-                            <a class="dropdown-item" href="registration.html">Registrarce</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
-                            id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Medios de Venta </a>
-                        <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
-                            <a class="dropdown-item" href="https://www.mercadolibre.com.ar">Mercadolibre</a>
-                            <a class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
-                        </div>
-                    </li>
-                </ul>
-                <div id="btn_header" class=" btn_center_car">
-                    <a class="btn btn-success btn-sm ml-3" href="cart.html">
-                        <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
-                    <!-- <span class="badge badge-light">3</span>-->
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="../index.html">
+                        <img id="logo_header" src="../img/logo.png" class="logo_image_size">
+                    </a>
                 </div>
-                <form class="form-inline">
-                    <div class="md-form my-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar...." aria-label="Search">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </nav>
-
-
-    <!--Carrito de Compra llevar fontawason para los iconos !!
-      <div class="container mt-5 mb-5">
-        <div class="d-flex justify-content-center row">
-            <div class="col-md-8">
-                <div class="p-2">
-                    <h4>Shopping cart</h4>
-                    <div class="d-flex flex-row align-items-center pull-right"><span class="mr-1">Sort by:</span><span class="mr-1 font-weight-bold">Price</span><i class="fa fa-angle-down"></i></div>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
-                    <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Basic T-shirt</span>
-                        <div class="d-flex flex-row product-desc">
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
-                            <div class="color"><span class="text-grey">Color:</span><span class="font-weight-bold">&nbsp;Grey</span></div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
-                        <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i>
-                    </div>
-                    <div>
-                        <h5 class="text-grey">$20.00</h5>
-                    </div>
-                    <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
-                    <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Basic T-shirt</span>
-                        <div class="d-flex flex-row product-desc">
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
-                            <div class="color"><span class="text-grey">Color:</span><span class="font-weight-bold">&nbsp;Grey</span></div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
-                        <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i>
-                    </div>
-                    <div>
-                        <h5 class="text-grey">$20.00</h5>
-                    </div>
-                    <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
-                    <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Basic T-shirt</span>
-                        <div class="d-flex flex-row product-desc">
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
-                            <div class="color"><span class="text-grey">Color:</span><span class="font-weight-bold">&nbsp;Grey</span></div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
-                        <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i>
-                    </div>
-                    <div>
-                        <h5 class="text-grey">$20.00</h5>
-                    </div>
-                    <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
-                    <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Basic T-shirt</span>
-                        <div class="d-flex flex-row product-desc">
-                            <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
-                            <div class="color"><span class="text-grey">Color:</span><span class="font-weight-bold">&nbsp;Grey</span></div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
-                        <h5 class="text-grey mt-1 mr-1 ml-1">2</h5><i class="fa fa-plus text-success"></i>
-                    </div>
-                    <div>
-                        <h5 class="text-grey">$20.00</h5>
-                    </div>
-                    <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
-                </div>
-                <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><input type="text" class="form-control border-0 gift-card" placeholder="discount code/gift card"><button class="btn btn-outline-warning btn-sm ml-2" type="button">Apply</button></div>
-                <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button">Proceed to Pay</button></div>
-            </div>
-        </div>
-    </div>-->
-
-    <!-- <section class="pt-5 pb-5">
-      <div class="container">
-        <div class="row w-100">
-            <div class="col-lg-12 col-md-12 col-12">
-                <h3 class="display-5 mb-2 text-center">Shopping Cart</h3>
-                <p class="mb-5 text-center">
-                    <i class="text-info font-weight-bold">3</i> items in your cart</p>
-                <table id="shoppingCart" class="table table-condensed table-responsive">
-                    <thead>
-                        <tr>
-                            <th style="width:60%">Product</th>
-                            <th style="width:12%">Price</th>
-                            <th style="width:10%">Quantity</th>
-                            <th style="width:16%"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-th="Product">
-                                <div class="row">
-                                    <div class="col-md-3 text-left">
-                                        <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                    </div>
-                                    <div class="col-md-9 text-left mt-sm-2">
-                                        <h4>Product Name</h4>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td data-th="Price">$49.00</td>
-                            <td data-th="Quantity">
-                                <input type="number" class="form-control form-control-lg text-center" value="1">
-                            </td>
-                            <td class="actions" data-th="">
-                                <div class="text-right">
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-sync"></i>
-                                    </button>
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Product">
-                                <div class="row">
-                                    <div class="col-md-3 text-left">
-                                        <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                    </div>
-                                    <div class="col-md-9 text-left mt-sm-2">
-                                        <h4>Product Name</h4>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td data-th="Price">$49.00</td>
-                            <td data-th="Quantity">
-                                <input type="number" class="form-control form-control-lg text-center" value="1">
-                            </td>
-                            <td class="actions" data-th="">
-                                <div class="text-right">
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-sync"></i>
-                                    </button>
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td data-th="Product">
-                                <div class="row">
-                                    <div class="col-md-3 text-left">
-                                        <img src="https://via.placeholder.com/250x250/5fa9f8/ffffff" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                    </div>
-                                    <div class="col-md-9 text-left mt-sm-2">
-                                        <h4>Product Name</h4>
-                                        <p class="font-weight-light">Brand &amp; Name</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td data-th="Price">$49.00</td>
-                            <td data-th="Quantity">
-                                <input type="number" class="form-control form-control-lg text-center" value="1">
-                            </td>
-                            <td class="actions" data-th="">
-                                <div class="text-right">
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-sync"></i>
-                                    </button>
-                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                        <i class="fas fa-trash"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="float-right text-right">
-                    <h4>Subtotal:</h4>
-                    <h1>$99.00</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4 d-flex align-items-center">
-            <div class="col-sm-6 order-md-2 text-right">
-                <a href="catalog.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5">Checkout</a>
-            </div>
-            <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
-                <a href="catalog.html">
-                    <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
-            </div>
-        </div>
-    </div>
-    </section>
--->
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="card">
-                <div class="card-body">
-                    <div>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-header  justify-content-center">
-                        <h3 class="card-title mb-4 mt-1 ">Ingresar</h3>
-
-                    </div>
-                    <p>
-                        <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i>Twitter</a>
-                        <a href="" class="btn btn-block btn-outline-primary"> <i
-                                class="fab fa-facebook-f"></i>facebook</a>
-                    </p>
-                    <hr>
-                </div>
-                <div class="modal-body">
-
-                    <form>
-                        <div class="form-group">
-                            <input name="" class="form-control" placeholder="Email" type="email">
-                        </div> <!-- form-group// -->
-                        <div class="form-group">
-                            <input class="form-control" placeholder="Password" type="password">
-                        </div> <!-- form-group// -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
-
-                                </div> <!-- form-group// -->
-
-
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="../pages/error_404.html">Error_404</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="contact_us.html">Contactenos</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Mi Cuenta </a>
+                            <div class="dropdown-menu dropdown-pink">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
+                                <a class="dropdown-item" href="registration.html">Registrarce</a>
                             </div>
-                            <div class="col-md-6 text text-end">
-                                <a class="small" href="#">Recordar Password?</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Medios de Venta </a>
+                            <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
+                                <a target="_blank" class="dropdown-item"
+                                    href="https://www.mercadolibre.com.ar">Mercadolibre</a>
+                                <a target="_blank" class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
                             </div>
-
+                        </li>
+                    </ul>
+                    <div id="btn_header" class=" btn_center_car">
+                        <a class="btn btn-success btn-sm ml-3" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
+                        <!-- <span class="badge badge-light">3</span>-->
+                    </div>
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...."
+                                aria-label="Search">
                         </div>
                     </form>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-                <div>
 
+    <div class="site-wrap">
+       
+        
+        <div class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-9 order-2">
+                        <div class="row">
+                            <div class="col-md-12 mb-5">
+                                <div class="float-md-left mb-4">
+                                    <h2 class="text-black h5">Shop All</h2>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="dropdown mr-1 ml-md-auto">
+                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle"
+                                            id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Latest
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                            <a class="dropdown-item" href="#">Men</a>
+                                            <a class="dropdown-item" href="#">Women</a>
+                                            <a class="dropdown-item" href="#">Children</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle"
+                                            id="dropdownMenuReference" data-toggle="dropdown">Reference</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                            <a class="dropdown-item" href="#">Relevance</a>
+                                            <a class="dropdown-item" href="#">Name, A to Z</a>
+                                            <a class="dropdown-item" href="#">Name, Z to A</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Price, low to high</a>
+                                            <a class="dropdown-item" href="#">Price, high to low</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Tank Top</a></h3>
+                                        <p class="mb-0">Finding perfect t-shirt</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/shoe_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Corater</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_2.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Polo Shirt</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_3.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">T-Shirt Mockup</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/shoe_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Corater</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Tank Top</a></h3>
+                                        <p class="mb-0">Finding perfect t-shirt</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/shoe_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Corater</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_2.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Polo Shirt</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_3.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">T-Shirt Mockup</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/shoe_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Corater</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_1.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Tank Top</a></h3>
+                                        <p class="mb-0">Finding perfect t-shirt</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a href="shop-single.html"><img src="images/cloth_2.jpg" alt="Image placeholder"
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h3><a href="shop-single.html">Polo Shirt</a></h3>
+                                        <p class="mb-0">Finding perfect products</p>
+                                        <p class="text-primary font-weight-bold">$50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up">
+                            <div class="col-md-12 text-center">
+                                <div class="site-block-27">
+                                    <ul>
+                                        <li><a href="#">&lt;</a></li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-1 mb-5 mb-md-0">
+                        <div class="border p-4 rounded mb-4">
+                            <h3 class="mb-3 h6 text-uppercase text-black d-block">Categories</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Men</span> <span
+                                            class="text-black ml-auto">(2,220)</span></a></li>
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Women</span> <span
+                                            class="text-black ml-auto">(2,550)</span></a></li>
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Children</span> <span
+                                            class="text-black ml-auto">(2,124)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="border p-4 rounded mb-4">
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Filter by Price</h3>
+                                <div id="slider-range" class="border-primary"></div>
+                                <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white"
+                                    disabled="" />
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Size</h3>
+                                <label for="s_sm" class="d-flex">
+                                    <input type="checkbox" id="s_sm" class="mr-2 mt-1"> <span class="text-black">Small
+                                        (2,319)</span>
+                                </label>
+                                <label for="s_md" class="d-flex">
+                                    <input type="checkbox" id="s_md" class="mr-2 mt-1"> <span class="text-black">Medium
+                                        (1,282)</span>
+                                </label>
+                                <label for="s_lg" class="d-flex">
+                                    <input type="checkbox" id="s_lg" class="mr-2 mt-1"> <span class="text-black">Large
+                                        (1,392)</span>
+                                </label>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Color</h3>
+                                <a href="#" class="d-flex color-item align-items-center">
+                                    <span class="bg-danger color d-inline-block rounded-circle mr-2"></span> <span
+                                        class="text-black">Red (2,429)</span>
+                                </a>
+                                <a href="#" class="d-flex color-item align-items-center">
+                                    <span class="bg-success color d-inline-block rounded-circle mr-2"></span> <span
+                                        class="text-black">Green (2,298)</span>
+                                </a>
+                                <a href="#" class="d-flex color-item align-items-center">
+                                    <span class="bg-info color d-inline-block rounded-circle mr-2"></span> <span
+                                        class="text-black">Blue (1,075)</span>
+                                </a>
+                                <a href="#" class="d-flex color-item align-items-center">
+                                    <span class="bg-primary color d-inline-block rounded-circle mr-2"></span> <span
+                                        class="text-black">Purple (1,075)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
 
-
-
-
-
-
-
-
-
-    <!--Script a Bootstrap-->
-    <script src="../js/bootstrap.min.js"></script>
-
-    <!--Script a Popper-->
-    <script src="../js/popper.min.js"></script>
-
-
+        <script src="../js prueba/jquery-3.3.1.min.js"></script>
+        <script src="../js prueba/jquery-ui.js"></script>
+        <script src="../js prueba/popper.min.js"></script>
+        <script src="../js prueba/bootstrap.min.js"></script>
+        <script src="../js prueba/owl.carousel.min.js"></script>
+        <script src="../js prueba/jquery.magnific-popup.min.js"></script>
+        <script src="../js prueba/aos.js"></script>
+        <script src="../js prueba/main.js"></script>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-23581568-13');
+        </script>
 </body>
+
 
 </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--SEO Clase 13-->
+    <title>Login</title>
+    <meta name="encoding" charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow" />
+    <!--Fin SEO-->
+
+    <!--Declaro Icomoon-->
+    <link rel="stylesheet" href="../css/iconmoon/style.css">
+    <!--Declaro Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <!--Declaro Mis Estilos-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--Declaro Mis Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Link fontaweson-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!--Script a Jquerry-->
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <!--Fuentes a Utilizar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--<div class="card">
+        <article class="card-body">
+            <!--<a href="" class="float-right btn btn-outline-primary">Sign up</a>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+            <p>
+            <h3 class="card-title mb-4 mt-1">Ingresar</h3>
+            <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i> Twitter</a>
+            <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i> facebook</a>
+            </p>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <input name="" class="form-control" placeholder="Email" type="email">
+                </div> <!-- form-group// 
+                <div class="form-group">
+                    <input class="form-control" placeholder="Password" type="password">
+                </div> <!-- form-group// 
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                        </div> <!-- form-group// 
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_recuperar_pass">
+                            Recordar Password
+                        </button>
+                        <!--<a class="small" data-toggle="modal" data-target="#modal_recuperar_pass">Recordar Password?</a>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </div>
+-->
+
+
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal Recordar Password
+    <div class="modal fade" id="modal_recuperar_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label">
+
+        <div class="card-header">
+            <h1 class="mb-0">Recuperar Password</h1>
+        </div>
+        <div class="card-body">
+            <form class="form" role="form" autocomplete="off">
+                <div class="form-group">
+                    <label for="inputResetPasswordEmail">Email</label>
+                    <input type="email" class="form-control" id="inputResetPasswordEmail" required="">
+                    <span id="helpResetPasswordEmail" class="form-text small text-muted">
+                        Las instrucciones para restablecer su contraseña se enviarán a esta dirección de correo
+                        electrónico.
+                    </span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg float-right">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>-->
+
+
+    <!-- Modal Login incorporo el logion.html por medio de un iframe-->
+
+    <div class="modal" id="modal_recuperar_pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="mb-0">Recuperar Password</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputResetPasswordEmail">Email</label>
+                        <input type="email" class="form-control" id="inputResetPasswordEmail" required="">
+                        <span id="helpResetPasswordEmail" class="form-text small text-muted">
+                            Las instrucciones para restablecer su contraseña se enviarán a esta dirección de correo
+                            electrónico.
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg float-right">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -3,30 +3,21 @@
 <html lang="es">
 
 <head>
-    <title>Prueba de Menu</title>
+    <title>Resultado de Busqueda</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <!--Declaro Icomoon-->
     <link rel="stylesheet" href="../css/iconmoon/style.css">
     <!--Declaro Fontaweson-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
-
     <link rel="stylesheet" href="../css prueba/bootstrap.min.css">
-
     <link rel="stylesheet" href="../css prueba/jquery-ui.css">
-
     <link rel="stylesheet" href="../css prueba/aos.css">
-
     <link rel="stylesheet" href="../css/style.css">
-
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -78,9 +69,8 @@
                         </li>
                     </ul>
                     <div id="btn_header" class=" btn_center_car">
-                        <a class="btn btn-success btn-sm ml-3" href="cart.html">
+                        <a class="btn btn-success btn-sm ml-3" data-toggle="modal" data-target="#modal_cart" href="">
                             <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
-                        <!-- <span class="badge badge-light">3</span>-->
                     </div>
                     <form class="form-inline">
                         <div class="md-form my-0">
@@ -156,11 +146,56 @@
             </div>
         </div>
     </div>
-
+    <!-- Modal Recover Carrito -->
+    <div id="modal_cart" class="modal fixed-left fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-aside" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-shopping-cart"></i>Mi Carrito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-image">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cant</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!--<td class="w-25">
+                      <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>-->
+                                <td>Bomba de Agua Curva</td>
+                                <td>1249.56</td>
+                                <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                                <td>1249.56</td>
+                                <td>
+                                    <a href="#" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <h5>Total: <span class="price text-success">1249.56</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar Comprando</button>
+                    <button type="button" class="btn btn-primary">Pagar</button>
+                </div>
+            </div>
+        </div> <!-- modal-bialog .// -->
+    </div> <!-- modal.// -->
 
     <div class="site-wrap">
-
-
         <div class="site-section">
             <div class="container">
                 <div class="row mb-5">
@@ -202,8 +237,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo1.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -216,8 +250,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo1.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -230,8 +263,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo1.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -244,8 +276,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo2.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -258,8 +289,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo2.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -272,8 +302,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo2.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -286,8 +315,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo3.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -300,8 +328,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo3.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -314,8 +341,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo3.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -328,8 +354,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo4.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -342,8 +367,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html3"><img
                                                 src="../img/Articulos/foto_articulo4.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -356,8 +380,7 @@
                             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
                                 <div class="block-4 text-center border">
                                     <figure class="block-4-image">
-                                        <a
-                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                        <a href="product_description.html"><img
                                                 src="../img/Articulos/foto_articulo4.jpg" alt="Imagen Articulo "
                                                 class="img-fluid"></a>
                                     </figure>
@@ -451,7 +474,6 @@
                                     <input type="checkbox" id="s_lg2" class="mr-2 mt-1"> <span class="text-black">S-10
                                         (8)</span>
                                 </label>
-
                             </div>
                             <div class="mb-4">
                                 <h3 class="mb-3 h6 text-uppercase text-black d-block">Año</h3>
@@ -474,17 +496,12 @@
                                     <input type="checkbox" id="s_lg3" class="mr-2 mt-1"> <span class="text-black">2017
                                         (8)</span>
                                 </label>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-
-
 
         <!-- Footer -->
         <div class="container-fluid">

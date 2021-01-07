@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-    <!--SEO Clase 13-->
+
     <meta name="encoding" charset="utf-8" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-    <title>Repuestos Caballito</title>
+    <title>Descripcion de Producto</title>
     <meta name="description"
         content="Sitio dedicado a la venta de repuestos automotores, originales y marcas alternativas. Nacionales e importador." />
     <meta name="keywords"
@@ -29,8 +29,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
+
+
+
+</head>
 <header>
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
@@ -46,8 +49,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home
+                            <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link nav-link animate__animated animate__backInUp"
@@ -126,6 +129,7 @@
         </div>
     </div>
 </div>
+
 <!-- Modal Recover Password -->
 <div class="modal" id="recover_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
     aria-hidden="true">
@@ -153,6 +157,7 @@
         </div>
     </div>
 </div>
+
 <!-- Modal Recover Carrito -->
 <div id="modal_cart" class="modal fixed-left fade" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-aside" role="document">
@@ -202,107 +207,83 @@
     </div> <!-- modal-bialog .// -->
 </div> <!-- modal.// -->
 
-<div class="container animated fadeIn">
+<div class="card">
     <div class="row">
-        <div class="col-sm-6 col-lg-12">
-            <h3> Contactenos </h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12" id="parent">
-            <div class="col-sm-12">
-                <iframe width="100%" height="320px;" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="col-sm-12">
-                <form action="form.php" class="contact-form" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="nm" placeholder="Nombre" required=""
-                            autofocus="">
-                    </div>
-                    <div class="form-group form_left">
-                        <input type="email" class="form-control" id="email" name="em" placeholder="Direccion de Email"
-                            required="">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="phone"
-                            onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
-                            placeholder="Numero de Celular" required="">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB"
-                            placeholder="Ingrese su consulta/Mensaje aqui." required=""></textarea>
-                        <br>
-                        <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span>
-                            Enviar </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="container second-portion">
-        <div class="row">
-            <!-- Boxes de Acoes -->
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="box">
-                    <div class="icon">
-                        <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                        <br>
-                        <div class="info">
-                            <h3 class="title">Mail & Website</h3>
-                            <p>
-                                <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp info@gmail.com
-                                <br>
-                                <br>
-                                <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.Desarrollo.com
-                            </p>
+        <aside class="col-sm-5 border-right">
+            <article class="gallery-wrap">
+                <div class="img-big-wrap">
+                    <div> <a href="#"></a><img src="../img/pagina_producto/foto_articulo2.jpg" class="img-fluid"
+                            alt="Responsive image"></a></div>
+                    <!-- <div> <a href="#"><img src="../img/pagina_producto/foto_articulo1.jpg"></a></div>-->
+                </div> <!-- slider-product.// -->
+                <div class="img-small-wrap">
+                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo1.jpg"> </div>
+                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo2.jpg"> </div>
+                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo3.jpg"> </div>
+                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo4.jpg"> </div>
+                </div> <!-- slider-nav.// -->
+            </article> <!-- gallery-wrap .end// -->
+        </aside>
+        <aside class="col-sm-7">
+            <article class="card-body p-5">
+                <h3 class="title mb-3">Bomba de Agua</h3>
+                <p class="price-detail-wrap">
+                    <span class="price h3 text-warning">
+                        <span class="currency">$</span>
+                        <span class="num">1259.50</span>
+                    </span </p> <!-- price-detail-wrap .// -->
+                <dl class="item-property">
+                    <dt>Descripcion</dt>
+                    <dd>
+                        <p>Bomba de agua Hilux 2.5 / 3.0
+                            MODELOS DEL 2005 AL 2015
+                            Repuesto Importado ALTERNATIVO</p>
+                        <p> Somos especialistas en repuestos para pick up-Tegmaco
+                            Consulte por otras marcas y modelos
+                            Consulte antes de comprar
+                            Los precios pueden variar sin previo aviso</p>
+                    </dd>
+                </dl>
+                <dl class="param param-feature">
+                    <dt>Marca</dt>
+                    <dd>Chevrolet</dd>
+                </dl> <!-- item-property-hor .// -->
+                <dl class="param param-feature">
+                    <dt>Modelo</dt>
+                    <dd>S-10 / Blazer</dd>
+                </dl> <!-- item-property-hor .// -->
+                <dl class="param param-feature">
+                    <dt>Metodo de Envio</dt>
+                    <dd>Correo / Retira en Deposito</dd>
+                </dl> <!-- item-property-hor .// -->
+                <hr>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <dl class="param param-inline">
+                            <dt>Cantidad: </dt>
+                            <dd>
+                                <select class="form-control form-control-sm" style="width:70px;">
+                                    <option> 1 </option>
+                                    <option> 2 </option>
+                                    <option> 3 </option>
+                                </select>
+                            </dd>
+                        </dl> <!-- item-property .// -->
+                    </div> <!-- col.// -->
+                    <div class="col-sm-7">
+                    </div> <!-- col.// -->
+                </div> <!-- row.// -->
+                <hr>
+                <a href="#" class="btn btn-md btn-primary text-uppercase"> Comprar </a>
+                <a href="#" class="btn btn-md btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i>
+                    Agreagar al Carro </a>
+            </article> <!-- card-body.// -->
+        </aside> <!-- col.// -->
+    </div> <!-- row.// -->
+</div> <!-- card.// -->
 
-                        </div>
-                    </div>
-                    <div class="space"></div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="box">
-                    <div class="icon">
-                        <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-                        <br>
-                        <div class="info">
-                            <h3 class="title">Telefonos</h3>
-                            <p>
-                                <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+54) 2345-6788
-                                <br>
-                                <br>
-                                <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+54) 2345-6789
-                            </p>
-                        </div>
-                    </div>
-                    <div class="space"></div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-lg-4">
-                <div class="box">
-                    <div class="icon">
-                        <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <br>
-                        <div class="info">
-                            <h3 class="title">Direccion</h3>
-                            <p>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Av Rivadavia 4210,
-                                CABA,
-                                ARG
-                            </p>
-                        </div>
-                    </div>
-                    <div class="space"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+<!--container.//-->
 <!-- Footer -->
 <div class="container-fluid">
     <div class="row  justify-content-center">

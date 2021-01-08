@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--SEO Clase 13-->
     <meta name="encoding" charset="utf-8" />
@@ -30,302 +31,360 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <header>
-        <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a href="../index.html">
-                        <img id="logo_header" src="../img/logo.png" class="logo_image_size" alt="Imagen-Logo">
-                    </a>
+<header>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="../index.html">
+                    <img id="logo_header" src="../img/logo.png" class="logo_image_size">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link animate__animated animate__backInUp"
+                            href="../pages/error_404.html">Error_404</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav-link animate__animated animate__backInUp"
+                            href="contact_us.html">Contactenos</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                            id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Mi Cuenta </a>
+                        <div class="dropdown-menu dropdown-pink">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
+                            <a class="dropdown-item" href="registration.html">Registrarce</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                            id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Medios de Venta </a>
+                        <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
+                            <a target="_blank" class="dropdown-item"
+                                href="https://www.mercadolibre.com.ar">Mercadolibre</a>
+                            <a target="_blank" class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
+                        </div>
+                    </li>
+                </ul>
+                <div id="btn_header" class=" btn_center_car">
+                    <a class="btn btn-success btn-sm ml-3" href="cart.html">
+                        <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
+                    <!-- <span class="badge badge-light">3</span>-->
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <form class="form-inline">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar...." aria-label="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Modal Login-->
+<div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="card-title mb-4 mt-1">Ingresar</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home
-                                <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link nav-link animate__animated animate__backInUp" href="#">Sucursales</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link nav-link animate__animated animate__backInUp"
-                                href="contact_us.html">Contactenos</a>
-                        </li>
-                        <li class="nav-item active dropdown">
-                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
-                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Mi Cuenta </a>
-                            <div class="dropdown-menu dropdown-pink">
-                                <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
-                                <a class="dropdown-item" href="../pages/registration.html">Registrarce</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active dropdown">
-                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
-                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Medios de Venta </a>
-                            <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
-                                <a class="dropdown-item" href="https://www.mercadolibre.com.ar">Mercadolibre</a>
-                                <a class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div id="btn_header" class=" btn_center_car">
-                        <a class="btn btn-success btn-sm ml-3" href="cart.html">
-                            <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
-                        <!-- <span class="badge badge-light">3</span>-->
-                    </div>
-                    <form class="form-inline">
-                        <div class="md-form my-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...."
-                                aria-label="Search">
+            </div>
+            <div class="modal-body">
+                <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i> Twitter</a>
+                <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <form>
+                    <div class="form-group">
+                        <input name="" class="form-control" placeholder="Email" type="email">
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Password" type="password">
+                    </div> <!-- form-group// -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                            </div> <!-- form-group// -->
                         </div>
-                    </form>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="link-primary" data-toggle="modal" data-target="#recover_password" href="">Recordar
+                    Contraseña !</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Recover Password -->
+<div class="modal" id="recover_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="mb-0">Recuperar Password</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="inputResetPasswordEmail">Email</label>
+                    <input type="email" class="form-control" id="inputResetPasswordEmail" required="">
+                    <span id="helpResetPasswordEmail" class="form-text small text-muted">
+                        Las instrucciones para restablecer su contraseña se enviarán a esta dirección de correo
+                        electrónico.
+                    </span>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- Modal Login incorporo el logion.html por medio de un iframe-->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <iframe src="login.html" width="600" height="475" frameborder="0" style="border:0"
-                        allowfullscreen></iframe>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success btn-lg float-right">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container animated fadeIn">
+    <div class="row">
+        <div class="col-sm-6 col-lg-12">
+            <h3> Contactenos </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" id="parent">
+            <div class="col-sm-12">
+                <iframe width="100%" height="320px;" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-12">
+                <form action="form.php" class="contact-form" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="nm" placeholder="Nombre" required=""
+                            autofocus="">
+                    </div>
+                    <div class="form-group form_left">
+                        <input type="email" class="form-control" id="email" name="em" placeholder="Direccion de Email"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone"
+                            onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
+                            placeholder="Numero de Celular" required="">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB"
+                            placeholder="Ingrese su consulta/Mensaje aqui." required=""></textarea>
+                        <br>
+                        <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span>
+                            Enviar </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container second-portion">
+        <div class="row">
+            <!-- Boxes de Acoes -->
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <br>
+                        <div class="info">
+                            <h3 class="title">Mail & Website</h3>
+                            <p>
+                                <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp info@gmail.com
+                                <br>
+                                <br>
+                                <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.Desarrollo.com
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                        <br>
+                        <div class="info">
+                            <h3 class="title">Telefonos</h3>
+                            <p>
+                                <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+54) 2345-6788
+                                <br>
+                                <br>
+                                <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+54) 2345-6789
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <br>
+                        <div class="info">
+                            <h3 class="title">Direccion</h3>
+                            <p>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Av Rivadavia 4210,
+                                CABA,
+                                ARG
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space"></div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Fin Modal-->
+</div>
 
-        <div class="container animated fadeIn">
-            <div class="row">
-                <div class="col-sm-6 col-lg-12">
-                    <h3> Contactenos </h3>
+<!-- Footer -->
+<div class="container-fluid">
+    <div class="row  justify-content-center">
+        <footer class="page-footer font-small mdb-color pt-4 ">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-center ">
+                <!-- Footer links -->
+                <div class="row text-center text-md-center mt-3 pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold brand_font">REPUESTOS CABALLITO</h6>
+                        <p>Somos una empresa familiar con más de 30 años de trayectoria en el barrio de Caballito.
+                            Trabajamos todas las marcas nacionales e importados, tanto repuesto originales como
+                            réplicas de excelente calidad.</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold brand_font">PRODUCTOS</h6>
+                        <p>Bombas de Agua</p>
+                        <p>Frenos</p>
+                        <p>Amortiguacion</p>
+                        <p>Distribucion</p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold brand_font">Links</h6>
+                        <p>
+                            <a class="link-primary" data-toggle="modal" data-target="#login">Mi Cuenta</a>
+                        </p>
+                        <p>
+                            <a href="pages/registration.html">Registracion</a>
+                        </p>
+                        <p>
+                            <a href="pages/error_404.html">Como Comprar</a>
+                        </p>
+                        <p>
+                            <a href="#!">Sucursales</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+                    <!-- Grid column -->
+                    <!--Resolver los iconos raros que se  ven delante de cada opcion-->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                        <p>
+                            <i class="fas fa-home mr-3"></i> Av Rivadavia 4210, CABA, ARG
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"> <a
+                                    href="mailto:elcorreoquequieres@correo.com">info@gmail.com</a></i>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> + 011 2345-6788
+                        </p>
+                        <p>
+                            <i class="fas fa-print mr-3"></i> + 011 2345-6789
+                        </p>
+                    </div>
+                    <!-- Grid column -->
                 </div>
+                <!-- Footer links -->
+                <hr>
+                <!-- Grid row -->
+                <div class="row d-flex">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-6 justify-content-start">
+                        <!--Copyright-->
+                        <h6 class="text-center ">© 2020 Copyright:
+                            <strong> Pablo Smith</strong>
+                        </h6>
+                    </div>
+                    <div class="col-md-6 col-lg-6 ">
+                        <span class="icon_responsive_footer"> Dispositivo</span>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+                        <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.facebook.com/"
+                                        class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://twitter.com/?lang=es"
+                                        class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.google.com/?hl=es"
+                                        class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.linkedin.com/feed/"
+                                        class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
             </div>
-            <div class="row">
-                <div class="col-sm-12" id="parent">
-                    <div class="col-sm-12">
-                        <iframe width="100%" height="320px;" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-12">
-                        <form action="form.php" class="contact-form" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="nm" placeholder="Nombre"
-                                    required="" autofocus="">
-                            </div>
-                            <div class="form-group form_left">
-                                <input type="email" class="form-control" id="email" name="em"
-                                    placeholder="Direccion de Email" required="">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="phone"
-                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
-                                    placeholder="Numero de Celular" required="">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB"
-                                    placeholder="Ingrese su consulta/Mensaje aqui." required=""></textarea>
-                                <br>
-                                <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span>
-                                    Enviar </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="container second-portion">
-                <div class="row">
-                    <!-- Boxes de Acoes -->
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
-                        <div class="box">
-                            <div class="icon">
-                                <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                <br>
-                                <div class="info">
-                                    <h3 class="title">Mail & Website</h3>
-                                    <p>
-                                        <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp info@gmail.com
-                                        <br>
-                                        <br>
-                                        <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.Desarrollo.com
-                                    </p>
-
-                                </div>
-                            </div>
-                            <div class="space"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
-                        <div class="box">
-                            <div class="icon">
-                                <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
-                                <br>
-                                <div class="info">
-                                    <h3 class="title">Telefonos</h3>
-                                    <p>
-                                        <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+54) 2345-6788
-                                        <br>
-                                        <br>
-                                        <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+54) 2345-6789
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="space"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
-                        <div class="box">
-                            <div class="icon">
-                                <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                                <br>
-                                <div class="info">
-                                    <h3 class="title">Direccion</h3>
-                                    <p>
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp Av Rivadavia 4210,
-                                        CABA,
-                                        ARG
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="space"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    <!-- Footer -->
-    <div class="container-fluid">
-        <div class="row  justify-content-center">
-            <footer class="page-footer font-small mdb-color pt-4 ">
-                <!-- Footer Links -->
-                <div class="container text-center text-md-center ">
-                    <!-- Footer links -->
-                    <div class="row text-center text-md-center mt-3 pb-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold brand_font">REPUESTOS CABALLITO</h6>
-                            <p>Somos una empresa familiar con más de 30 años de trayectoria en el barrio de Caballito.
-                                Trabajamos todas las marcas nacionales e importados, tanto repuesto originales como
-                                réplicas de excelente calidad.</p>
-                        </div>
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none">
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold brand_font">PRODUCTOS</h6>
-                            <p>Bombas de Agua</p>
-                            <p>Frenos</p>
-                            <p>Amortiguacion</p>
-                            <p>Distribucion</p>
-                        </div>
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold brand_font">Links</h6>
-                            <p>
-                                <a href="#!">Mi Cuenta</a>
-                            </p>
-                            <p>
-                                <a href="#!">Registracion</a>
-                            </p>
-                            <p>
-                                <a href="#!">Como Comprar</a>
-                            </p>
-                            <p>
-                                <a href="#!">Sucursales</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none">
-                        <!-- Grid column -->
-                        <!--Resolver los iconos raros que se  ven delante de cada opcion-->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                            <p>
-                                <i class="fas fa-home mr-3"></i> Av Rivadavia 4210, CABA, ARG
-                            </p>
-                            <p>
-                                <i class="fas fa-envelope mr-3"></i> info@gmail.com
-                            </p>
-                            <p>
-                                <i class="fas fa-phone mr-3"></i> + 011 2345-6788
-                            </p>
-                            <p>
-                                <i class="fas fa-print mr-3"></i> + 011 2345-6789
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                    </div>
-                    <!-- Footer links -->
-                    <hr>
-                    <!-- Grid row -->
-                    <div class="row d-flex">
-                        <!-- Grid column -->
-                        <div class="col-md-6 col-lg-6 justify-content-start">
-                            <!--Copyright-->
-                            <h6 class="text-center ">© 2020 Copyright:
-                                    <strong> Pablo Smith</strong>
-                            </h6>
-                        </div>
-                        <div class="col-md-6 col-lg-6 ">
-                            <span class="icon_responsive_footer"> Dispositivo</span>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-5 col-lg-4 ml-lg-0">
-                            <!-- Social buttons -->
-                            <div class="text-center text-md-right">
-                                <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-google-plus-g"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
-                    </div>
-                    <!-- Grid row -->
-                </div>
-                <!-- Footer Links -->
-            </footer>
-            <!-- Footer -->
-        </div>
+            <!-- Footer Links -->
+        </footer>
+        <!-- Footer -->
     </div>
-    <!--Script a Bootstrap-->
-    <script src="../js/bootstrap.min.js"></script>
-    <!--Script a Popper-->
-    <script src="../js/popper.min.js"></script>
+</div>
+<!--Script a Bootstrap-->
+<script src="../js/bootstrap.min.js"></script>
+<!--Script a Popper-->
+<script src="../js/popper.min.js"></script>
 </body>
+
 </html>

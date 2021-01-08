@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Prueba de Menu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <!--Declaro Icomoon-->
+    <link rel="stylesheet" href="../css/iconmoon/style.css">
+    <!--Declaro Fontaweson-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+
+    <link rel="stylesheet" href="../css prueba/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css prueba/jquery-ui.css">
+
+    <link rel="stylesheet" href="../css prueba/aos.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="../index.html">
+                        <img id="logo_header" src="../img/logo.png" class="logo_image_size">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="../pages/error_404.html">Error_404</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="contact_us.html">Contactenos</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Mi Cuenta </a>
+                            <div class="dropdown-menu dropdown-pink">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
+                                <a class="dropdown-item" href="registration.html">Registrarce</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Medios de Venta </a>
+                            <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
+                                <a target="_blank" class="dropdown-item"
+                                    href="https://www.mercadolibre.com.ar">Mercadolibre</a>
+                                <a target="_blank" class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="btn_header" class=" btn_center_car">
+                        <a class="btn btn-success btn-sm ml-3" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
+                        <!-- <span class="badge badge-light">3</span>-->
+                    </div>
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal Login-->
+    <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-title mb-4 mt-1">Ingresar</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i> facebook</a>
+                    <form>
+                        <div class="form-group">
+                            <input name="" class="form-control" placeholder="Email" type="email">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Password" type="password">
+                        </div> <!-- form-group// -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                                </div> <!-- form-group// -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="link-primary" data-toggle="modal" data-target="#recover_password" href="">Recordar
+                        Contraseña !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Recover Password -->
+    <div class="modal" id="recover_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="mb-0">Recuperar Password</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputResetPasswordEmail">Email</label>
+                        <input type="email" class="form-control" id="inputResetPasswordEmail" required="">
+                        <span id="helpResetPasswordEmail" class="form-text small text-muted">
+                            Las instrucciones para restablecer su contraseña se enviarán a esta dirección de correo
+                            electrónico.
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-lg float-right">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="site-wrap">
+
+
+        <div class="site-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-9 order-2">
+                        <div class="row">
+                            <div class="col-md-12 mb-5">
+                                <div class="float-md-left mb-4">
+                                    <h4 class="text-black h5">Prodcutos</h4>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="dropdown mr-1 ml-md-auto">
+                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle"
+                                            id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Ultimas Busquedas
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                            <a class="dropdown-item" href="#">Bomba de Agua</a>
+                                            <a class="dropdown-item" href="#">Freno</a>
+                                            <a class="dropdown-item" href="#">Filtros</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle"
+                                            id="dropdownMenuReference" data-toggle="dropdown">Referencia</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                            <a class="dropdown-item" href="#">Relevancia</a>
+                                            <a class="dropdown-item" href="#">Ordenado, A --> Z</a>
+                                            <a class="dropdown-item" href="#">Ordenado, Z --> A</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Menor Precio</a>
+                                            <a class="dropdown-item" href="#">Mauor Precio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo1.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo1.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo1.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo2.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo2.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo2.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo3.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo3.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo3.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo4.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo4.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+                                <div class="block-4 text-center border">
+                                    <figure class="block-4-image">
+                                        <a
+                                            href="https://articulo.mercadolibre.com.ar/MLA-841266415-bomba-de-agua-toyota-hilux-2530-2005-2008-2010-2015-_JM#reco_item_pos=0&reco_backend=navigation&reco_backend_type=function&reco_client=home_navigation-recommendations&reco_id=7aa44595-8d11-4cb9-b138-fa3eda10507c&c_id=/home/navigation-recommendations/element&c_element_order=1&c_uid=e8f2809b-438a-4714-b76f-6d3b7072ef33"><img
+                                                src="../img/Articulos/foto_articulo4.jpg" alt="Imagen Articulo "
+                                                class="img-fluid"></a>
+                                    </figure>
+                                    <div class="block-4-text p-4">
+                                        <h6>Bomba de Agua - Ford Ranger-</h6>
+                                        <p class="font-weight-bold ">$1248.25</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" data-aos="fade-up">
+                            <div class="col-md-12 text-center">
+                                <div class="site-block-27">
+                                    <ul>
+                                        <li><a href="#">&lt;</a></li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&gt;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-1 mb-5 mb-md-0">
+                        <div class="border p-4 rounded mb-4">
+                            <h3 class="mb-3 h6 text-uppercase text-black d-block">Categorias</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Bomba de Agua</span> <span
+                                            class="text-black ml-auto">(102)</span></a></li>
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Filtros de eite</span> <span
+                                            class="text-black ml-auto">(34)</span></a></li>
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Pastilla de Freno</span> <span
+                                            class="text-black ml-auto">(26)</span></a></li>
+                                <li class="mb-1"><a href="#" class="d-flex"><span>Refrigerantes</span> <span
+                                            class="text-black ml-auto">(8)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="border p-4 rounded mb-4">
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Filtro por Precio</h3>
+                                <div id="slider-range" class="border-primary"></div>
+                                <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white"
+                                    disabled="" />
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Marcas</h3>
+                                <label for="s_sm" class="d-flex">
+                                    <input type="checkbox" id="s_sm" class="mr-2 mt-1"> <span class="text-black">Ford
+                                        (319)</span>
+                                </label>
+                                <label for="s_md" class="d-flex">
+                                    <input type="checkbox" id="s_md" class="mr-2 mt-1"> <span class="text-black">Peugeot
+                                        (282)</span>
+                                </label>
+                                <label for="s_lg" class="d-flex">
+                                    <input type="checkbox" id="s_lg" class="mr-2 mt-1"> <span
+                                        class="text-black">Citroren
+                                        (125)</span>
+                                </label>
+                                <label for="s_lg" class="d-flex">
+                                    <input type="checkbox" id="s_lg" class="mr-2 mt-1"> <span class="text-black">Toyota
+                                        (53)</span>
+                                </label>
+                                <label for="s_lg" class="d-flex">
+                                    <input type="checkbox" id="s_lg" class="mr-2 mt-1"> <span
+                                        class="text-black">VolsWagen
+                                        (89)</span>
+                                </label>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Modelo</h3>
+                                <label for="s_lg2" class="d-flex">
+                                    <input type="checkbox" id="s_lg2" class="mr-2 mt-1"> <span class="text-black">Ranger
+                                        (8)</span>
+                                </label>
+                                <label for="s_lg2" class="d-flex">
+                                    <input type="checkbox" id="s_lg2" class="mr-2 mt-1"> <span class="text-black">Amarok
+                                        (12)</span>
+                                </label><label for="s_lg2" class="d-flex">
+                                    <input type="checkbox" id="s_lg2" class="mr-2 mt-1"> <span class="text-black">Hilux
+                                        (4)</span>
+                                </label>
+                                <label for="s_lg2" class="d-flex">
+                                    <input type="checkbox" id="s_lg2" class="mr-2 mt-1"> <span class="text-black">SW4
+                                        (26)</span>
+                                </label>
+                                <label for="s_lg2" class="d-flex">
+                                    <input type="checkbox" id="s_lg2" class="mr-2 mt-1"> <span class="text-black">S-10
+                                        (8)</span>
+                                </label>
+
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="mb-3 h6 text-uppercase text-black d-block">Año</h3>
+                                <label for="s_lg3" class="d-flex">
+                                    <input type="checkbox" id="s_lg3" class="mr-2 mt-1"> <span class="text-black">2021
+                                        (8)</span>
+                                </label>
+                                <label for="s_lg3" class="d-flex">
+                                    <input type="checkbox" id="s_lg3" class="mr-2 mt-1"> <span class="text-black">2020
+                                        (12)</span>
+                                </label><label for="s_lg3" class="d-flex">
+                                    <input type="checkbox" id="s_lg3" class="mr-2 mt-1"> <span class="text-black">2019
+                                        (4)</span>
+                                </label>
+                                <label for="s_lg3" class="d-flex">
+                                    <input type="checkbox" id="s_lg3" class="mr-2 mt-1"> <span class="text-black">2018
+                                        (26)</span>
+                                </label>
+                                <label for="s_lg3" class="d-flex">
+                                    <input type="checkbox" id="s_lg3" class="mr-2 mt-1"> <span class="text-black">2017
+                                        (8)</span>
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <div class="container-fluid">
+            <div class="row  justify-content-center">
+                <footer class="page-footer font-small mdb-color pt-4 ">
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-center ">
+                        <!-- Footer links -->
+                        <div class="row text-center text-md-center mt-3 pb-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold brand_font">REPUESTOS CABALLITO</h6>
+                                <p>Somos una empresa familiar con más de 30 años de trayectoria en el barrio de
+                                    Caballito.
+                                    Trabajamos todas las marcas nacionales e importados, tanto repuesto originales como
+                                    réplicas de excelente calidad.</p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold brand_font">PRODUCTOS</h6>
+                                <p>Bombas de Agua</p>
+                                <p>Frenos</p>
+                                <p>Amortiguacion</p>
+                                <p>Distribucion</p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold brand_font">Links</h6>
+                                <p>
+                                    <a class="link-primary" data-toggle="modal" data-target="#login">Mi Cuenta</a>
+                                </p>
+                                <p>
+                                    <a href="pages/registration.html">Registracion</a>
+                                </p>
+                                <p>
+                                    <a href="pages/error_404.html">Como Comprar</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Sucursales</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+                            <!-- Grid column -->
+                            <!--Resolver los iconos raros que se  ven delante de cada opcion-->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                                <p>
+                                    <i class="fas fa-home mr-3"></i> Av Rivadavia 4210, CABA, ARG
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope mr-3"> <a
+                                            href="mailto:elcorreoquequieres@correo.com">info@gmail.com</a></i>
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone mr-3"></i> + 011 2345-6788
+                                </p>
+                                <p>
+                                    <i class="fas fa-print mr-3"></i> + 011 2345-6789
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Footer links -->
+                        <hr>
+                        <!-- Grid row -->
+                        <div class="row d-flex">
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-6 justify-content-start">
+                                <!--Copyright-->
+                                <h6 class="text-center ">© 2020 Copyright:
+                                    <strong> Pablo Smith</strong>
+                                </h6>
+                            </div>
+                            <div class="col-md-6 col-lg-6 ">
+                                <span class="icon_responsive_footer"> Dispositivo</span>
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">
+                                <!-- Social buttons -->
+                                <div class="text-center text-md-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://www.facebook.com/"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://twitter.com/?lang=es"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://www.google.com/?hl=es"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://www.linkedin.com/feed/"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                    <!-- Footer Links -->
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/aos.js"></script>
+        <script src="../js/main.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+        </script>
+</body>
+
+
+</html>

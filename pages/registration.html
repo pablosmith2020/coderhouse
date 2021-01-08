@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--SEO Clase 13-->
     <title>Registracion</title>
@@ -34,12 +35,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
     <header>
         <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
                 <div class="navbar-brand">
-                    <img id="logo_header" src="../img/logo.png" class="logo_image_size" alt="Imagen de Referencia Logo" >
+                    <a href="../index.html">
+                        <img id="logo_header" src="../img/logo.png" class="logo_image_size">
+                    </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
@@ -49,11 +53,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home
+                                <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link nav-link animate__animated animate__backInUp" href="#">Sucursales</a>
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="../pages/error_404.html">Error_404</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link nav-link animate__animated animate__backInUp"
@@ -65,7 +70,7 @@
                                 aria-expanded="false">Mi Cuenta </a>
                             <div class="dropdown-menu dropdown-pink">
                                 <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
-                                <a class="dropdown-item" href="../pages/registration.html">Registrarce</a>
+                                <a class="dropdown-item" href="registration.html">Registrarce</a>
                             </div>
                         </li>
                         <li class="nav-item active dropdown">
@@ -73,8 +78,9 @@
                                 id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">Medios de Venta </a>
                             <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
-                                <a class="dropdown-item" href="https://www.mercadolibre.com.ar">Mercadolibre</a>
-                                <a class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
+                                <a target="_blank" class="dropdown-item"
+                                    href="https://www.mercadolibre.com.ar">Mercadolibre</a>
+                                <a target="_blank" class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
                             </div>
                         </li>
                     </ul>
@@ -93,15 +99,67 @@
             </div>
         </nav>
     </header>
-    <!-- Modal Login incorporo el logion.html por medio de un iframe-->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
-        aria-hidden="true">
+
+    <!-- Modal Login-->
+    <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <iframe src="login.html" width="600" height="475" frameborder="0" style="border:0"
-                        allowfullscreen></iframe>
+                    <h3 class="card-title mb-4 mt-1">Ingresar</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i> facebook</a>
+                    <form>
+                        <div class="form-group">
+                            <input name="" class="form-control" placeholder="Email" type="email">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Password" type="password">
+                        </div> <!-- form-group// -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                                </div> <!-- form-group// -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="link-primary" data-toggle="modal" data-target="#recover_password" href="">Recordar
+                        Contraseña !</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal Recover Password -->
+    <div class="modal" id="recover_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="mb-0">Recuperar Password</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputResetPasswordEmail">Email</label>
+                        <input type="email" class="form-control" id="inputResetPasswordEmail" required="">
+                        <span id="helpResetPasswordEmail" class="form-text small text-muted">
+                            Las instrucciones para restablecer su contraseña se enviarán a esta dirección de correo
+                            electrónico.
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-lg float-right">Enviar</button>
                 </div>
             </div>
         </div>
@@ -170,8 +228,9 @@
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block"> Crear Cuenta </button>
                 </div> <!-- form-group// -->
-        
-                <p class="text-center" >Tiene una Cuenta? <a data-toggle="modal" data-target="#login" href="">Ingresar</a> </p>
+
+                <p class="text-center">Tiene una Cuenta? <a data-toggle="modal" data-target="#login"
+                        href="">Ingresar</a> </p>
             </form>
         </article>
     </div>
@@ -209,13 +268,13 @@
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold brand_font">Links</h6>
                             <p>
-                                <a href="#!">Mi Cuenta</a>
+                                <a class="link-primary" data-toggle="modal" data-target="#login">Mi Cuenta</a>
                             </p>
                             <p>
-                                <a href="#!">Registracion</a>
+                                <a href="pages/registration.html">Registracion</a>
                             </p>
                             <p>
-                                <a href="#!">Como Comprar</a>
+                                <a href="pages/error_404.html">Como Comprar</a>
                             </p>
                             <p>
                                 <a href="#!">Sucursales</a>
@@ -231,7 +290,8 @@
                                 <i class="fas fa-home mr-3"></i> Av Rivadavia 4210, CABA, ARG
                             </p>
                             <p>
-                                <i class="fas fa-envelope mr-3"></i> info@gmail.com
+                                <i class="fas fa-envelope mr-3"> <a
+                                        href="mailto:elcorreoquequieres@correo.com">info@gmail.com</a></i>
                             </p>
                             <p>
                                 <i class="fas fa-phone mr-3"></i> + 011 2345-6788
@@ -250,9 +310,7 @@
                         <div class="col-md-6 col-lg-6 justify-content-start">
                             <!--Copyright-->
                             <h6 class="text-center ">© 2020 Copyright:
-                                <a href="https://mdbootstrap.com/">
-                                    <strong> Pablo Smith</strong>
-                                </a>
+                                <strong> Pablo Smith</strong>
                             </h6>
                         </div>
                         <div class="col-md-6 col-lg-6 ">
@@ -265,22 +323,26 @@
                             <div class="text-center text-md-right">
                                 <ul class="list-unstyled list-inline">
                                     <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a target="_blank" href="https://www.facebook.com/"
+                                            class="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a target="_blank" href="https://twitter.com/?lang=es"
+                                            class="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i class="fab fa-twitter"></i>
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a target="_blank" href="https://www.google.com/?hl=es"
+                                            class="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i class="fab fa-google-plus-g"></i>
                                         </a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <a target="_blank" href="https://www.linkedin.com/feed/"
+                                            class="btn-floating btn-sm rgba-white-slight mx-1">
                                             <i class="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>
@@ -294,7 +356,6 @@
                 <!-- Footer Links -->
             </footer>
             <!-- Footer -->
-            <!--Cambio de Prueba para ajecutar comando GIT-->
         </div>
     </div>
 

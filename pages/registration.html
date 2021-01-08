@@ -13,7 +13,6 @@
         content="Bomba de agua, alternadores, amortiguadores, frenos a tambos, frenos a disco, carburación, inyección." />
     <!--Fin SEO-->
 
-
     <!--Declaro Icomoon-->
     <link rel="stylesheet" href="../css/iconmoon/style.css">
     <!--Declaro Bootstrap-->
@@ -33,7 +32,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -85,9 +83,8 @@
                         </li>
                     </ul>
                     <div id="btn_header" class=" btn_center_car">
-                        <a class="btn btn-success btn-sm ml-3" href="cart.html">
+                        <a class="btn btn-success btn-sm ml-3" data-toggle="modal" data-target="#modal_cart" href="">
                             <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
-                        <!-- <span class="badge badge-light">3</span>-->
                     </div>
                     <form class="form-inline">
                         <div class="md-form my-0">
@@ -99,7 +96,6 @@
             </div>
         </nav>
     </header>
-
     <!-- Modal Login-->
     <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -164,6 +160,54 @@
             </div>
         </div>
     </div>
+    <!-- Modal Recover Carrito -->
+    <div id="modal_cart" class="modal fixed-left fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-aside" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-shopping-cart"></i>Mi Carrito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-image">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cant</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!--<td class="w-25">
+                      <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>-->
+                                <td>Bomba de Agua Curva</td>
+                                <td>1249.56</td>
+                                <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                                <td>1249.56</td>
+                                <td>
+                                    <a href="#" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <h5>Total: <span class="price text-success">1249.56</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar Comprando</button>
+                    <button type="button" class="btn btn-primary">Pagar</button>
+                </div>
+            </div>
+        </div> <!-- modal-bialog .// -->
+    </div> <!-- modal.// -->
 
     <div class="card bg-light">
         <article class="card-body mx-auto" style="max-width: 400px;">
@@ -234,9 +278,7 @@
             </form>
         </article>
     </div>
-
     </div>
-
     <!-- Footer -->
     <div class="container-fluid">
         <div class="row  justify-content-center">
@@ -358,15 +400,9 @@
             <!-- Footer -->
         </div>
     </div>
-
-
     <!--Script a Bootstrap-->
     <script src="../js/bootstrap.min.js"></script>
-
     <!--Script a Popper-->
     <script src="../js/popper.min.js"></script>
-
-
 </body>
-
 </html>

@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
     <meta name="encoding" charset="utf-8" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <title>Descripcion de Producto</title>
@@ -29,9 +28,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
 
 </head>
 <header>
@@ -129,7 +125,6 @@
         </div>
     </div>
 </div>
-
 <!-- Modal Recover Password -->
 <div class="modal" id="recover_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
     aria-hidden="true">
@@ -157,7 +152,6 @@
         </div>
     </div>
 </div>
-
 <!-- Modal Recover Carrito -->
 <div id="modal_cart" class="modal fixed-left fade" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-aside" role="document">
@@ -206,23 +200,84 @@
         </div>
     </div> <!-- modal-bialog .// -->
 </div> <!-- modal.// -->
-
 <div class="card">
     <div class="row">
         <aside class="col-sm-5 border-right">
-            <article class="gallery-wrap">
-                <div class="img-big-wrap">
-                    <div> <a href="#"></a><img src="../img/pagina_producto/foto_articulo2.jpg" class="img-fluid"
-                            alt="Responsive image"></a></div>
-                    <!-- <div> <a href="#"><img src="../img/pagina_producto/foto_articulo1.jpg"></a></div>-->
-                </div> <!-- slider-product.// -->
-                <div class="img-small-wrap">
-                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo1.jpg"> </div>
-                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo2.jpg"> </div>
-                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo3.jpg"> </div>
-                    <div class="item-gallery"> <img src="../img/Articulos/foto_articulo4.jpg"> </div>
-                </div> <!-- slider-nav.// -->
-            </article> <!-- gallery-wrap .end// -->
+            <div class="row min-vh-100 ">
+                <div id="myCarousel" class="carousel slide shadow">
+                    <!-- main slider carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active carousel-item" data-slide-number="0">
+                            <img src="../img/Articulos/carrousel/foto_articulo1_carrusel.jpg" class="img-fluid"
+                                alt="Imagen de Producto">
+                        </div>
+                        <div class="carousel-item" data-slide-number="1">
+                            <img src="../img/Articulos/carrousel/foto_articulo1_carrusel.jpg" class="img-fluid"
+                                alt="Imagen de Producto">
+                        </div>
+                        <div class="carousel-item" data-slide-number="2">
+                            <img src="../img/Articulos/carrousel/foto_articulo2_carrusel.jpg" class="img-fluid"
+                                alt="Imagen de Producto">
+                        </div>
+                        <div class="carousel-item" data-slide-number="3">
+                            <img src="../img/Articulos/carrousel/foto_articulo3_carrusel.jpg" class="img-fluid"
+                                alt="Imagen de Producto">
+                        </div>
+                        <div class="carousel-item" data-slide-number="4">
+                            <img src="../img/Articulos/carrousel/foto_articulo4_carrusel.jpg" class="img-fluid"
+                                alt="Imagen de Producto">
+                        </div>
+                    </div>
+                    <!-- main slider carousel nav controls -->
+                    <ul class="carousel-indicators list-inline mx-auto border px-2">
+                        <li class="list-inline-item active">
+                            <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+                                <img src="../img/Articulos/slider_carrousel/foto_articulo1_slide.jpg" class="img-fluid"
+                                    alt="Imagen de Producto">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                                <img src="../img/Articulos/slider_carrousel/foto_articulo2_slide.jpg" class="img-fluid"
+                                    alt="Imagen de Producto">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                                <img src="../img/Articulos/slider_carrousel/foto_articulo3_slide.jpg" class="img-fluid"
+                                    alt="Imagen de Producto">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                                <img src="../img/Articulos/slider_carrousel/foto_articulo4_slide.jpg" class="img-fluid"
+                                    alt="Imagen de Producto">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="title mb-3">Categorice el Producto</h3>
+                <div class="container d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="stars">
+                                <form action=""> <input class="star star-5" id="star-5" type="radio" name="star" />
+                                    <label class="star star-5" for="star-5"></label> <input class="star star-4"
+                                        id="star-4" type="radio" name="star" /> <label class="star star-4"
+                                        for="star-4"></label> <input class="star star-3" id="star-3" type="radio"
+                                        name="star" /> <label class="star star-3" for="star-3"></label> <input
+                                        class="star star-2" id="star-2" type="radio" name="star" /> <label
+                                        class="star star-2" for="star-2"></label> <input class="star star-1" id="star-1"
+                                        type="radio" name="star" /> <label class="star star-1" for="star-1"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--/main slider carousel-->
         </aside>
         <aside class="col-sm-7">
             <article class="card-body p-5">
@@ -281,9 +336,6 @@
         </aside> <!-- col.// -->
     </div> <!-- row.// -->
 </div> <!-- card.// -->
-
-</div>
-<!--container.//-->
 <!-- Footer -->
 <div class="container-fluid">
     <div class="row  justify-content-center">
@@ -321,10 +373,10 @@
                             <a href="pages/registration.html">Registracion</a>
                         </p>
                         <p>
-                            <a href="pages/error_404.html">Como Comprar</a>
+                            <a href="result_search.html">Buscador Productos</a>
                         </p>
                         <p>
-                            <a href="#!">Sucursales</a>
+                            <a href="contact_us.html">Contactenos</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -410,5 +462,4 @@
 <!--Script a Popper-->
 <script src="../js/popper.min.js"></script>
 </body>
-
 </html>

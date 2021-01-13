@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <!--SEO Clase 13-->
     <meta name="encoding" charset="utf-8" />
@@ -28,14 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
         rel="stylesheet">
-
-
-
-
-
-
 </head>
-
 <body>
     <header>
         <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
@@ -90,8 +82,8 @@
                     </div>
                     <form class="form-inline">
                         <div class="md-form my-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...."
-                                aria-label="Search">
+                            <input id="input_buscador_header" class="form-control mr-sm-2" type="text"
+                                placeholder="Buscar...." aria-label="Search">
                         </div>
                     </form>
                 </div>
@@ -209,7 +201,7 @@
             </div>
         </div> <!-- modal-bialog .// -->
     </div> <!-- modal.// -->
-
+    <!-- Seccion banner Imagen -->
     <div class="container-fluid">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -244,6 +236,7 @@
             </a>
         </div>
     </div>
+    <!-- Seccion Compra en 3 Pasos -->
     <div class="container-fluid align-items-center">
         <h3 class="font-weight-bold">Comprá En Tres Simples Pasos</h3>
         <div class="container-fluid">
@@ -276,11 +269,12 @@
             </div>
         </div>
     </div>
+    <!-- Seccion Buscador Repuestos -->
     <div class="container-fluid">
         <h3 class="font-weight-bold">Buscador de Produtos</h3>
     </div>
-    </div>
     <section class="search-sec">
+
         <div class="container">
             <form action="#" method="post" novalidate="novalidate">
                 <div class="row">
@@ -319,11 +313,12 @@
                                 </select>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                <input type="text" class="form-control search-slt" placeholder="Numero de Cedula verde">
+                                <input id="input_numero_cedula" type="text" class="form-control search-slt focus"
+                                    placeholder="Numero de Cedula verde">
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12 p-0">
                                 <a href="pages/result_search.html">
-                                    <button type="button" class="btn btn-primary wrn-btn">Consultar</button>
+                                    <button type="button" class="btn btn-primary wrn-btn ">Consultar</button>
                                 </a>
                             </div>
                         </div>
@@ -332,10 +327,7 @@
             </form>
         </div>
     </section>
-    <div class="container-fluid">
-        <div class="row" id="Seccion Medios De Pago">
-        </div>
-    </div>
+    <!-- Seccion Mapa -->
     <div class="map-responsive">
         <iframe
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
@@ -378,10 +370,10 @@
                                 <a href="pages/registration.html">Registracion</a>
                             </p>
                             <p>
-                                <a href="pages/error_404.html">Como Comprar</a>
+                                <a href="pages/result_search.html">Buscador Productos</a>
                             </p>
                             <p>
-                                <a href="#!">Sucursales</a>
+                                <a href="pages/contact_us.html">Contactenos</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -467,5 +459,4 @@
     <!--Script a Popper-->
     <script src="js/popper.min.js"></script>
 </body>
-
 </html>

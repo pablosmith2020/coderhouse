@@ -5,25 +5,20 @@ nav {
       /*Generacion de Sub Menu*/
       position: absolute;
       display: none;
-
       li {
         display: block;
         margin-top: 5px;
       }
     }
-
     li {
       /*quitamos las viñetas*/
       list-style: none;
       /* lo convierto a Bloque para poder manipularlos en la misma linea*/
       display: inline-block;
-
       /* trabajo con la flotacion del Sub Menu lo oculto y le saco margen y padding*/
-
     }
   }
 }
-
 header {
   ul {
     li {
@@ -31,7 +26,6 @@ header {
       list-style: none;
       /* lo convierto a Bloque para poder manipularlos en la misma linea*/
       display: inline-block;
-
       &:hover {
         ul {
           display: block;
@@ -49,50 +43,31 @@ header {
     }
   }
 }
-
 .dropdown-item:hover, .dropdown-item:focus {
   color:white;
   text-decoration:solid;
   background-color: #2a2e2c;
 }
-
-
-
-
-/*
-  .header_top_right {
-    float: right;
-  }
-
-  .header_top_center {
-    float: initial;
-    text-align: center;
-  }
-*/
   .logo_image_size {
     width: 100px;
     height: auto;
   }
-
   .overlap_sub_menu {
     z-index: 999;
     background-color: #343a40;
   }
-
   .form-inline {
     flex-flow: row
   }
-
   .btn-success {
-    background-color: chocolate;
-    border-color: chocolate;
+    background-color:#0062cc;
+    border-color: #0062cc;
     width: 130px;
   }
-
   .btn-success:hover {
     color: #fff;
-    background-color: #6e3e07;
-    border-color: #6e3e07;
+    background-color:#1f82ec;
+    border-color: #1f82ec;
   }
   .bg-primary{
     background-color: black !important;
@@ -100,50 +75,37 @@ header {
   .btn_center_car{
     margin-right: 50px
   }
-
-
-
   /*---------------------------- estilos para el cart shop*/
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
-
 body {
     font-family: 'Manrope', sans-serif;
     background: #eee
 }
-
 .size span {
     font-size: 11px
 }
-
 .color span {
     font-size: 11px
 }
-
 .product-deta {
     margin-right: 70px
 }
-
 .gift-card:focus {
     box-shadow: none
 }
-
 .pay-button {
     color: #fff
 }
-
 .pay-button:hover {
     color: #fff
 }
-
 .pay-button:focus {
     color: #fff;
     box-shadow: none
 }
-
 .text-grey {
     color: #a39f9f
 }
-
 .qty i {
     font-size: 11px
 }

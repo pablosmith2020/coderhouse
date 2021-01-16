@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--SEO Clase 13-->
+    <meta name="encoding" charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title>Pagar</title>
+    <meta name="description"
+        content="Sitio dedicado a la venta de repuestos automotores, originales y marcas alternativas. Nacionales e importador." />
+    <meta name="keywords"
+        content="Bomba de agua, alternadores, amortiguadores, frenos a tambos, frenos a disco, carburación, inyección." />
+    <!--Fin SEO-->
+
+    <!--Declaro Icomoon-->
+    <link rel="stylesheet" href="../css/iconmoon/style.css">
+    <!--Declaro Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <!--Declaro Fontaweson-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!--Declaro Mis Estilos-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--Declaro Mis Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Script a Jquerry-->
+    <script src="../js/jquery-3.4.1.slim.min.js"></script>
+    <!--Fuentes a Utilizar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="../index.html">
+                        <img id="logo_header" src="../img/logo.png" class="logo_image_size">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp" href="../index.html">Home
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="../pages/error_404.html">Error_404</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link nav-link animate__animated animate__backInUp"
+                                href="contact_us.html">Contactenos</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Mi Cuenta </a>
+                            <div class="dropdown-menu dropdown-pink">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#login" href="">Ingresar</a>
+                                <a class="dropdown-item" href="registration.html">Registrarce</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle nav-link animate__animated animate__backInUp"
+                                id="navbarDropdownMenuLink-7" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Medios de Venta </a>
+                            <div class="dropdown-menu dropdown-pink" aria-labelledby="navbarDropdownMenuLink-7">
+                                <a target="_blank" class="dropdown-item"
+                                    href="https://www.mercadolibre.com.ar">Mercadolibre</a>
+                                <a target="_blank" class="dropdown-item" href="https://www.amazon.com/-/es/">Amazon</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="btn_header" class=" btn_center_car">
+                        <a class="btn btn-success btn-sm ml-3" data-toggle="modal" data-target="#modal_cart" href="">
+                            <i class="fa fa-shopping-cart"></i> Carrito (3)</a>
+                    </div>
+                    <form class="form-inline">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...."
+                                aria-label="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal Login-->
+    <div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="card-title mb-4 mt-1">Ingresar</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-facebook-f"></i> facebook</a>
+                    <form>
+                        <div class="form-group">
+                            <input name="" class="form-control" placeholder="Email" type="email">
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Password" type="password">
+                        </div> <!-- form-group// -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                                </div> <!-- form-group// -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="link-primary" data-toggle="modal" data-target="#recover_password" href="">Recordar
+                        Contraseña !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Recover Password -->
+    <div class="modal" id="recover_password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="mb-0">Recuperar Password</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputResetPasswordEmail">Email</label>
+                        <input type="email" class="form-control" id="inputResetPasswordEmail" required="">
+                        <span id="helpResetPasswordEmail" class="form-text small text-muted">
+                            Las instrucciones para restablecer su contraseña se enviarán a esta dirección de correo
+                            electrónico.
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-lg float-right">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Recover Carrito -->
+    <div id="modal_cart" class="modal fixed-left fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-aside" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-shopping-cart"></i>Mi Carrito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-image">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cant</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bomba de Agua Curva</td>
+                                <td>1249.56</td>
+                                <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                                <td>1249.56</td>
+                                <td>
+                                    <a href="#" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <h5>Total: <span class="price text-success">1249.56</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="result_search.html">
+                        <button type="button" class="btn btn-secondary">
+                            Continuar Comprando
+                        </button>
+                    </a>
+                    <a href="pay.html">
+                        <button type="button" class="btn btn-primary">
+                            Pagar
+                        </button>
+                    </a>
+                </div>>
+            </div>
+        </div> <!-- modal-bialog .// -->
+    </div> <!-- modal.// -->
+
+    <div class="container py-5">
+        <!-- For demo purpose -->
+        <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center">
+                <h3 class="display-4">Metodos de Pago</h3>
+            </div>
+        </div> <!-- End -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card ">
+                    <div class="card-header">
+                        <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                            <!-- Credit card form tabs -->
+                            <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                <li class="nav-item"> <a data-toggle="pill" href="#credit-card"
+                                        class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Tarjeta de
+                                        Credito
+                                    </a> </li>
+                                <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i
+                                            class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+                                <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i
+                                            class="fas fa-mobile-alt mr-2"></i> Home Banking</a> </li>
+                            </ul>
+                        </div> <!-- End -->
+                        <!-- Credit card form content -->
+                        <div class="tab-content">
+                            <!-- credit card info-->
+                            <div id="credit-card" class="tab-pane fade show active pt-3">
+                                <form role="form">
+                                    <div class="form-group"> <label for="username">
+                                            <h6>Titular</h6>
+                                        </label> <input type="text" name="username"
+                                            placeholder="Ingrese el Nombre del Titular" required class="form-control ">
+                                    </div>
+                                    <div class="form-group"> <label for="cardNumber">
+                                            <h6>Numero de Tarjeta</h6>
+                                        </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber"
+                                                placeholder="Ingrese un Numero Valido de Tarjeta" class="form-control "
+                                                required>
+                                            <div class="input-group-append"> <span class="input-group-text text-muted">
+                                                    <i class="fab fa-cc-visa mx-1"></i> <i
+                                                        class="fab fa-cc-mastercard mx-1"></i> <i
+                                                        class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="form-group"> <label><span class="hidden-xs">
+                                                        <h6>Fecha de Expiracion</h6>
+                                                    </span></label>
+                                                <div class="input-group"> <input type="number" placeholder="MM" name=""
+                                                        class="form-control" required> <input type="number"
+                                                        placeholder="YY" name="" class="form-control" required> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group mb-4"> <label data-toggle="tooltip"
+                                                    title="Código CVV de tres dígitos en el reverso de su tarjeta">
+                                                    <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                                </label> <input type="text" required class="form-control"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer"> <button type="button"
+                                            class="subscribe btn btn-primary btn-block shadow-sm"> Confirmar pago
+                                        </button>
+                                        
+                                </form>
+                            </div>
+                        </div> <!-- End -->
+                        <!-- Paypal info -->
+                        <div id="paypal" class="tab-pane fade pt-3">
+                            <h6 class="pb-2">Seleccione su tipo de cuenta paypal</h6>
+                            <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio"
+                                        checked> Particular </label> <label class="radio-inline"> <input type="radio"
+                                        name="optradio" class="ml-5">Internacional </label></div>
+
+                            <a href="https://www.paypal.com/ar/signin" target="_blank">
+                                <p>
+                                    <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i>
+                                        Iniciar sesión Paypal</button>
+                                </p>
+                            </a>
+                            <p class="text-muted"> Nota: después de hacer clic en el botón, será dirigido a un seguro
+                                pasarela de pago. Después de completar el proceso de pago, será redirigido nuevamente.
+                                al sitio web para ver los detalles de su pedido. </p>
+                        </div> <!-- End -->
+                        <!-- bank transfer info -->
+                        <div id="net-banking" class="tab-pane fade pt-3">
+                            <div class="form-group "> <label for="Select Your Bank">
+                                    <h6>Seleccione su Banco</h6>
+                                </label> <select class="form-control" id="ccmonth">
+                                    <option value="" selected disabled>--Por favor Seleccione su Banco--</option>
+                                    <option>Banco Frances</option>
+                                    <option>Banco ICBC</option>
+                                    <option>Banco Patagonia</option>
+                                    <option>Banco Nacion</option>
+                                    <option>Banco Provincia</option>
+                                    <option>Banco Ciudad</option>
+                                    <option>Banco Galicia</option>
+                                    <option>Banco Supervil</option>
+                                    <option>Banco Hipotecario</option>
+                                    <option>Banco Cordoba</option>
+                                </select> </div>
+                            <div class="form-group">
+                                <a target="_blank" href="https://www.accessbanking.com.ar/RetailHomeBankingWeb/init.do?a=b&cm_mmc=icbc-_-access-_-header-_-onlinebanking">
+                                <p> <button type="button" class="btn btn-primary "><i
+                                            class="fas fa-mobile-alt mr-2"></i>Confirmar Pago</button> 
+                                </p>
+                                
+                            </a>
+                            </div>
+                            <p class="text-muted">Nota: después de hacer clic en el botón, será dirigido a un seguro
+                                pasarela de pago. Después de completar el proceso de pago, será redirigido nuevamente.
+                                al sitio web para ver los detalles de su pedido </p>
+                        </div> <!-- End -->
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="container-fluid">
+            <div class="row  justify-content-center">
+                <footer class="page-footer font-small mdb-color pt-4 ">
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-center ">
+                        <!-- Footer links -->
+                        <div class="row text-center text-md-center mt-3 pb-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold brand_font">REPUESTOS CABALLITO</h6>
+                                <p>Somos una empresa familiar con más de 30 años de trayectoria en el barrio de
+                                    Caballito.
+                                    Trabajamos todas las marcas nacionales e importados, tanto repuesto originales como
+                                    réplicas de excelente calidad.</p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold brand_font">PRODUCTOS</h6>
+                                <p>Bombas de Agua</p>
+                                <p>Frenos</p>
+                                <p>Amortiguacion</p>
+                                <p>Distribucion</p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold brand_font">Links</h6>
+                                <p>
+                                    <a class="link-primary" data-toggle="modal" data-target="#login">Mi Cuenta</a>
+                                </p>
+                                <p>
+                                    <a href="pages/registration.html">Registracion</a>
+                                </p>
+                                <p>
+                                    <a href="result_search.html">Buscador Productos</a>
+                                </p>
+                                <p>
+                                    <a href="contact_us.html">Contactenos</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+                            <!-- Grid column -->
+                            <!--Resolver los iconos raros que se  ven delante de cada opcion-->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                                <p>
+                                    <i class="fas fa-home mr-3"></i> Av Rivadavia 4210, CABA, ARG
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope mr-3"> <a
+                                            href="mailto:elcorreoquequieres@correo.com">info@gmail.com</a></i>
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone mr-3"></i> + 011 2345-6788
+                                </p>
+                                <p>
+                                    <i class="fas fa-print mr-3"></i> + 011 2345-6789
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Footer links -->
+                        <hr>
+                        <!-- Grid row -->
+                        <div class="row d-flex">
+                            <!-- Grid column -->
+                            <div class="col-md-6 col-lg-6 justify-content-start">
+                                <!--Copyright-->
+                                <h6 class="text-center ">© 2020 Copyright:
+                                    <strong> Pablo Smith</strong>
+                                </h6>
+                            </div>
+                            <div class="col-md-6 col-lg-6 ">
+                                <span class="icon_responsive_footer"> Dispositivo</span>
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">
+                                <!-- Social buttons -->
+                                <div class="text-center text-md-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://www.facebook.com/"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://twitter.com/?lang=es"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://www.google.com/?hl=es"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a target="_blank" href="https://www.linkedin.com/feed/"
+                                                class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                    <!-- Footer Links -->
+                </footer>
+                <!-- Footer -->
+            </div>
+        </div>
+        <!--Script a Bootstrap-->
+        <script src="../js/bootstrap.min.js"></script>
+        <!--Script a Popper-->
+        <script src="../js/popper.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+</body>
+
+</html>

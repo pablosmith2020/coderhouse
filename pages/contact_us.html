@@ -195,12 +195,80 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar Comprando</button>
-                <button type="button" class="btn btn-primary">Pagar</button>
-            </div>
+                <a href="result_search.html">
+                    <button type="button" class="btn btn-secondary">
+                        Continuar Comprando
+                    </button>
+                </a>
+                <a href="pay.html">
+                    <button type="button" class="btn btn-primary">
+                        Pagar
+                    </button>
+                </a>
+            </div>>
         </div>
     </div> <!-- modal-bialog .// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div> <!-- modal.// -->
+
+<!-- Modal Respuesta Contactenos-->
+<div class="modal" id="thank_you" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Contactenos</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="jumbotron text-center">
+                    <h1 class="display-3">Gracias !!</h1>
+                    <p class="lead"><strong>Por favor verifique su Email. </strong></p>
+                    <p>En el encontrara las respuestas realizadas .</p>
+                    <hr>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-sm" href="../index.html" role="button">Volver Inicio</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Seccion-->
 <div class="container animated fadeIn">
     <div class="row">
         <div class="col-sm-6 col-lg-12">
@@ -233,7 +301,8 @@
                         <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB"
                             placeholder="Ingrese su consulta/Mensaje aqui." required=""></textarea>
                         <br>
-                        <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span>
+                        <button class="btn btn-default btn-send" data-toggle="modal" data-target="#thank_you" href="">
+                            <span class="glyphicon glyphicon-send"></span>
                             Enviar </button>
                     </div>
                 </form>
@@ -256,13 +325,11 @@
                                 <br>
                                 <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.Desarrollo.com
                             </p>
-
                         </div>
                     </div>
                     <div class="space"></div>
                 </div>
             </div>
-
             <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="box">
                     <div class="icon">
@@ -281,7 +348,6 @@
                     <div class="space"></div>
                 </div>
             </div>
-
             <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="box">
                     <div class="icon">
@@ -428,4 +494,5 @@
 <!--Script a Popper-->
 <script src="../js/popper.min.js"></script>
 </body>
+
 </html>
